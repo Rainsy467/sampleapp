@@ -33,7 +33,7 @@ jobs:
   call-reusable-deployment-workflow-job:
      needs: build-job
 
-     uses: ./.github/workflows/reusable-deploy.yml
+     uses: Rainsy467/shared-workflows/.github/workflows/reusable-deploy-shared-repo.yml@main
      with:
        package-name: .net-app # nom de l'artécfact que nous allons utiliser
        app-name: appsvc1
